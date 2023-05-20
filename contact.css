@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+}
+header{
+  height:18vh;
+}
+.nav {
+  float:right;
+  list-style-type: none;
+  margin: 5vh 3vw;
+}
+.nav1 {
+  display: inline-block;
+  margin: 1.5vh;
+}
+.nav2 {
+  text-decoration: none;
+  color: #fff;
+  padding: 1vh;
+  border: 1vh transparent;
+  border-radius: 1.3vh;
+  font-size: 3vh;
+  transition: .5s;
+  
+}
+.nav2:hover {
+  background-color:#fff;
+  color: #333;
+}
+.main {
+  max-width: 1240vh;
+  margin: auto;
+}
+.Simeon{
+  color: #fff;
+  display: inline-block;
+  padding-left: 6vh;
+  margin-top: 7vh;
+  font-size: 6vh;
+}
+.num{
+  color: #fff;
+  display: inline-block;
+  padding: top 0 ;
+  padding-left: 0vh;
+  padding-right: 7vh;
+  padding-bottom: 0vh;
+  margin-top: 7vh;
+  font-size: 145%;
+}
+.contact{
+  color: #fff;
+  display: inline-block;
+  padding-left: 6vh;
+  margin-top: 7vh;
+  font-size: 186%;
+}
+.Tisho{
+  float: right;
+}
+.vs{
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+}
