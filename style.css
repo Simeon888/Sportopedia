@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-image: url('bimg6.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+  animation: animate 25s ease-in-out infinite; 
+}
+@keyframes animate{
+  0%{
+    background-image: url('bimg6.png');
+  }
+  5%{
+    background-image: url('bimg11.png');
+  }
+  10%{
+    background-image: url('bimg9.png');
+  }
+  20%{
+    background-image: url('bimg8.png');
+  }
+  40%{
+    background-image: url('bimg10.png');
+  }
+  50%{
+    background-image: url('bimg12.png');
+  }
+  65%{
+    background-image: url('bimg13.png');
+  }
+  85%{
+    background-image: url('bimg14.png');
+  }
+  100%{
+    background-image: url('bimg10.png');
+  }
+}
+.nav {
+  float:right;
+  list-style-type: none;
+  margin: 5vh 3vw;
+}
+.nav1 {
+  display: inline-block;
+  margin: 1.5vh;
+}
+.nav2 {
+  text-decoration: none;
+  color: #fff;
+  padding: 1vh;
+  border: 1vh transparent;
+  border-radius: 1.3vh;
+  font-size: 3vh;
+  transition: .5s;
+}
+.nav2:hover {
+  background-color:#fff;
+  color: #333;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.main {
+  max-width: 1240vh;
+  margin: auto;
+}
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 23.5%;
+  color: #fff;
+  font-size: 6vw;
+  text-align: center;
+}
+.button {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+}
+.btn {
+  text-decoration: none;
+  border: .4vh solid#fff;
+  padding: 1.5vh 4.3vw;
+  color: #fff;
+  border-radius: 1vw;
+  font-size: 3vh;
+  transition: .5s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
