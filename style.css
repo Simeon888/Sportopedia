@@ -1,117 +1,83 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
 }
-header{
-  background-image: url('bimg6.png');
+body{
+  min-height: 100vh;
+  background-image: url('img/bimg6.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height:100vh;
-  animation: animate 25s ease-in-out infinite; 
+  font-family: "Audiowide", sans-serif;
+  animation: animate 25s ease-in-out infinite;
 }
-@keyframes animate{
-  0%{
-    background-image: url('bimg6.png');
-  }
-  5%{
-    background-image: url('bimg11.png');
-  }
-  10%{
-    background-image: url('bimg9.png');
-  }
-  20%{
-    background-image: url('bimg8.png');
-  }
-  40%{
-    background-image: url('bimg10.png');
-  }
-  50%{
-    background-image: url('bimg12.png');
-  }
-  65%{
-    background-image: url('bimg13.png');
-  }
-  85%{
-    background-image: url('bimg14.png');
-  }
-  100%{
-    background-image: url('bimg10.png');
-  }
+header{
+ position: fixed;
+ top: 0; left: 0; right: 0;
+ background: transparent;
+ box-shadow: 0 5px 10px rgba(0,0,0,.1);
+ padding: 0px 7%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 1000;
 }
-.nav {
-  float:right;
+ul {
   list-style-type: none;
-  margin: 5vh 3vw;
 }
-.nav1 {
-  display: inline-block;
-  margin: 1.5vh;
+ul li {
+  position: relative;
+  float: left;
+  padding: .3rem;
 }
-.nav2 {
+ul li a {
+  display: block;
   text-decoration: none;
   color: #fff;
-  padding: 1vh;
+  padding: 1.2rem;
   border: 1vh transparent;
   border-radius: 1.3vh;
-  font-size: 3vh;
+  font-size: 150%;
   transition: .5s;
 }
-.nav2:hover {
+ul li a:hover {
   background-color:#fff;
   color: #333;
 }
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
+ul li ul{
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  left: 0;
+  width: 30vh;
+  background: #333;
+  display: none;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+ul li ul li{
+  width: 80%;
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin-left: 3vh;
+}
+ul li ul li a{
+  font-size: 3vh;
+}
+ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+ul li:focus-within>ul,
+ul li:hover>ul{
+  display: initial;
+}
+ul li ul:focus-visible>li,
+ul li ul:hover>li{
+  display: initial;
+}
+.row1{
   display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+  background: #333;
 }
 .main {
   max-width: 1240vh;
@@ -119,15 +85,16 @@ header{
 }
 h1 {
   position: absolute;
-  top: 30%;
-  left: 23.5%;
+  top: 34%;
+  left: 20%;
   color: #fff;
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
+  font-family: "Audiowide", sans-serif;
 }
 .button {
   position: absolute;
-  top: 55%;
+  top: 62%;
   left: 42%;
 }
 .btn {
@@ -143,4 +110,32 @@ h1 {
   background-color: #fff;
   color: #333;
 }
-
+@keyframes animate{
+  0%{
+    background-image: url('img/bimg6.png');
+  }
+  5%{
+    background-image: url('img/bimg11.png');
+  }
+  10%{
+    background-image: url('img/bimg9.png');
+  }
+  20%{
+    background-image: url('img/bimg8.png');
+  }
+  40%{
+    background-image: url('img/bimg10.png');
+  }
+  50%{
+    background-image: url('img/bimg12.png');
+  }
+  65%{
+    background-image: url('img/bimg13.png');
+  }
+  85%{
+    background-image: url('img/bimg14.png');
+  }
+  100%{
+    background-image: url('img/bimg10.png');
+  }
+}
